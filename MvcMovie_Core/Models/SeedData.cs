@@ -17,6 +17,7 @@ namespace MvcMovie_Core.Models
                 //{
                 //    return;   // DB has been seeded
                 //}
+                //test linija
 
                 context.Movie.AddRange(
                      new Movie
