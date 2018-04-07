@@ -25,7 +25,7 @@ namespace MvcMovie_Core
                 try
                 {
                     // Requires using MvcMovie.Models;
-                    SeedData.Initialize(services);
+                   SeedData.Initialize(services);
                 }
                 catch (Exception ex)
                 {
