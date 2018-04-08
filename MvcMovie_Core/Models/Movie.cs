@@ -7,16 +7,21 @@ namespace MvcMovie_Core.Models
     {
         public int ID { get; set; }
         [StringLength(60, MinimumLength = 3)]
+        [Display(Name = "Naslov")]
         [Required]
         public string Title { get; set; }
+
         //[DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [Display(Name = "Release Date")]
+        [Display(Name = "Datum na Izdavanje")]
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
+
         public string Genre { get; set; }
+
         [Range(1, 100)]
         [DataType(DataType.Currency)]
         public decimal Price { get; set; }
+
         [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]
         [Required]
         [StringLength(30)]

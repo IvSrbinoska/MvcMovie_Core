@@ -13,10 +13,10 @@ namespace MvcMovie_Core.Models
                 serviceProvider.GetRequiredService<DbContextOptions<MvcMovie_CoreContext>>()))
             {
                 // Look for any movies.
-                //if (context.Movie.Any())
-                //{
-                //    return;   // DB has been seeded
-                //}
+                if (context.Movie.Any())
+                {
+                    return;   // DB has been seeded
+                }
                 //test linija
 
                 context.Movie.AddRange(

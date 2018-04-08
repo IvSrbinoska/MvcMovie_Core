@@ -104,7 +104,7 @@ namespace MvcMovie_Core.Controllers
             var movie = await _context.Movie.SingleOrDefaultAsync(m => m.ID == id);
             if (movie == null)
             {
-                return NotFound();
+                return NotFound(); // Ok("jjjj");
             }
             return View(movie);
         }
@@ -139,7 +139,7 @@ namespace MvcMovie_Core.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");// (nameof(Index));
             }
             return View(movie);
         }

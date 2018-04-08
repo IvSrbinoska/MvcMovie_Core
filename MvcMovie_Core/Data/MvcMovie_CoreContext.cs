@@ -15,5 +15,7 @@ namespace MvcMovie_Core.Models
         }
 
         public DbSet<MvcMovie_Core.Models.Movie> Movie { get; set; }
+        public DbSet<MvcMovie_Core.Models.MovieSkoro> Film{ get; set; }
+
     }
 }
